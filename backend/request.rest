@@ -1,0 +1,74 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Serviço 2",
+    "description": "Serviço",
+    "price": 2800,
+    "image": "https://t4.ftcdn.net/jpg/01/20/28/25/360_F_120282530_gMCruc8XX2mwf5YtODLV2O1TGHzu4CAb.jpg"
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/64336181f82913b3fc15035e
+
+###
+DELETE http://localhost:3000/api/services/64336181f82913b3fc15035e
+
+###
+PUT http://localhost:3000/api/services/6433660a975e1736d7fba058
+Content-Type: application/json
+
+{
+    "name": "Serviço 2",
+    "description": "Serviço 2",
+    "price": 3000,
+    "image": "https://t4.ftcdn.net/jpg/01/20/28/25/360_F_120282530_gMCruc8XX2mwf5YtODLV2O1TGHzu4CAb.jpg"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento",
+    "author": "Hugo",
+    "description": "Festa de aniversário",
+    "budget": 5000,
+    "image": "https://t4.ftcdn.net/jpg/01/20/28/25/360_F_120282530_gMCruc8XX2mwf5YtODLV2O1TGHzu4CAb.jpg",
+    "services": [{
+        "name": "Serviço 2",
+        "description": "Serviço 2",
+        "price": 1000,
+        "image": "https://t4.ftcdn.net/jpg/01/20/28/25/360_F_120282530_gMCruc8XX2mwf5YtODLV2O1TGHzu4CAb.jpg"
+    }]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/643451e694d5fb1e10c5d51d
+
+###
+DELETE http://localhost:3000/api/parties/643458ed63ac1b123a75d3ad
+
+###
+PUT http://localhost:3000/api/parties/643451e694d5fb1e10c5d51d
+Content-Type: application/json
+
+{
+    "title": "Meu evento",
+    "author": "Hugo",
+    "description": "Festa de aniversário",
+    "budget": 5000,
+    "image": "https://t4.ftcdn.net/jpg/01/20/28/25/360_F_120282530_gMCruc8XX2mwf5YtODLV2O1TGHzu4CAb.jpg",
+    "services": [{
+        "name": "Serviço 2",
+        "description": "Serviço 2",
+        "price": 1000,
+        "image": "https://t4.ftcdn.net/jpg/01/20/28/25/360_F_120282530_gMCruc8XX2mwf5YtODLV2O1TGHzu4CAb.jpg"
+    }]
+}
